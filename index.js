@@ -1,8 +1,21 @@
+/*
 function takeANumber(katzDeliLine, name){
   var message = `Welcome, ${name}. You are number ${katzDeliLine.length + 1} in line.`;
   katzDeliLine.push(name);
   return message;
 }
+*/
+
+var ticketNum = 0;
+var katzDeliLine =[];
+function takeANumber(katzDeliLine, name){
+  ticketNum++
+  var message = `Welcome, ${name}. You are number ${ticketNum} in line.`;
+  katzDeliLine.push(ticketNum);
+  return message;
+}
+
+
 
 function nowServing(katzDeliLine){
   if (katzDeliLine.length > 0){
